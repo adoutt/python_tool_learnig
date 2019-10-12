@@ -5,10 +5,10 @@ import pandas as pd
 """
 simple example
 """
+
 def simple_example():
     db_informations = {'ip': 'xxx.xxx.xxx.xxx', 'username': 'xxxx', 'passwd': 'xxxxxx', 'port': 1433, 'db': 'xxx'}
-    ''' pymysql '''
-
+    '''sql server'''
     conn = pymssql.connect(host=db_informations['ip'], user =db_informations['username'], password =db_informations['passwd'], database =db_informations['db'],port=db_informations['port'], charset ='utf8')
     # conn.close()
     ''' sqlalchemy '''
