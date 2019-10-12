@@ -8,6 +8,7 @@ simple example
 def simple_example():
     db_informations = {'ip': 'xxx.xxx.xxx.xxx', 'username': 'sourcedata', 'passwd': 'Root-123', 'port': 3306, 'db': 'sourcedata'}
     ''' pymysql '''
+
     conn = pymysql.connect(host=db_informations['ip'], user =db_informations['username'], password =db_informations['passwd'], database =db_informations['db'],port=db_informations['port'], charset ='utf8')
     #conn.close()
     ''' sqlalchemy '''
